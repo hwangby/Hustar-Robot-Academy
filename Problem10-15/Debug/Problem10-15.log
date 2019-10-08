@@ -1,0 +1,4 @@
+﻿  Problem10-15.cpp
+C:\Users\pc\source\repos\Problem10-15\Problem10-15.cpp(20,18): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\pc\source\repos\Problem10-15\Problem10-15.cpp(45,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  Problem10-15.vcxproj -> C:\Users\pc\source\repos\Problem10-15\Debug\Problem10-15.exe
