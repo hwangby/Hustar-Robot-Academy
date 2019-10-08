@@ -8,7 +8,7 @@ int main()
 	string guess;
 	srand((unsigned int)time(0));
 	string words[] = { "hangman","hustar","programming","binch", "spider",
-						"georgia","starcraft","global", "problem", "huston"
+						"georgia","starcraft","global", "problem", "huston",
 						"joker","onepiece","music","samsung","apple"};
 	string hidden = "";
 	string ans;
