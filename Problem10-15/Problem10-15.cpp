@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <ctime>
 using namespace std;
 
@@ -12,14 +12,14 @@ int main()
 						"joker","onepiece","music","samsung","apple"};
 	string hidden = "";
 	string ans;
-	int count = 0;
+	
 	do {
 		hidden = "";
 		repeat = 'a';
 		ans = words[rand() % 15];
 		for (int i=0; i<ans.size();i++)
 			hidden += "*";
-		count++;
+		int miss = 0;
 		while (true) {
 			if (hidden == ans) {
 				cout << "The word is " << ans << ". You missed " << count << " time";
@@ -36,6 +36,7 @@ int main()
 
 			if (ans.find(guess) == string::npos) {
 				cout << "     " << guess << " is not in the word\n";
+				miss++;
 				continue;
 			}
 			else if (hidden.find(guess) < 100) {
