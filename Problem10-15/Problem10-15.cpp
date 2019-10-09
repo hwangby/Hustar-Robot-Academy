@@ -22,8 +22,8 @@ int main()
 		int miss = 0;
 		while (true) {
 			if (hidden == ans) {
-				cout << "The word is " << ans << ". You missed " << count << " time";
-				if (count > 1) {
+				cout << "The word is " << ans << ". You missed " << miss << " time";
+				if (miss > 1) {
 					cout << "s\n\n";
 				}
 				else {
@@ -39,7 +39,7 @@ int main()
 				miss++;
 				continue;
 			}
-			else if (hidden.find(guess) < 100) {
+			else if (hidden.find(guess) != string::npos) {
 				cout << "     " << guess << " is already in the word\n";
 			}
 			else {
